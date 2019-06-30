@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.body-container {
+    width: 1920px;
+    height: 1080px;
+}
+.container {
+    width: 1920px;
+    height: 140px; 
+}
+.container-top {
+    width: 100%;
+    height: auto;
+}
+
+/* 프로필, prologue, home 부분 */
+.container-left {
+    width: 50%;
+    padding-top: 20px;
+    float: left;
+    
+}
+.profile {
+    float: left;
+    margin-left: 7%;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.menu-first {
+    float: left;
+    list-style: none;
+    padding-left: 6px;
+    margin-top: 10px;
+}
+.menu-first-item {
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.menu-first li:nth-child(2){
+    margin-left: -5px;
+    margin-right: 6px;
+    margin-top: -1px;
+    font-size: 15px;
+}
+
+/* 이웃 블로그, 이메일 부분 */
+.container-right {
+    width: 50%;
+    float: right;
+}
+.menu-second {
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 14%;
+    padding-right: 20px;
+    
+}
+.menu-second-item {
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.menu-second li:nth-child(2) {
+    margin-left: -2px;
+    margin-right: 6px;
+    margin-top: -1px;
+    font-size: 15px;
+}
+
+/* 홈페이지 메인 제목 */
+.container-center {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+#left-hr-from-title {
+    display: inline-block;
+    margin-top: 43px;
+    margin-right: 1%;
+    width: 40%;
+    border: none;
+    border-top: 2px solid black;
+}
+.container-center h1 {
+    display: inline-block;
+    padding-right: 1%;
+}
+#right-hr-from-title {
+    display: inline-block;
+    margin-top: 43px;
+    width: 40%;
+    border: none;
+    border-top: 2px solid black;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
