@@ -2,21 +2,6 @@
     width: 100%;
 }
 
-/* 목차 부분 */
-.main-index {
-    position: relative;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    float: left;
-}
-.menu-index-item {
-    display: inline;
-    margin: 0 7% 0 7%;
-    font-size: 20px;
-    font-weight: bold;
-}
-
 .visual {
     height: auto;
 }
@@ -28,34 +13,35 @@
 /* 홈 화면 왼쪽 */
 .home-left {
     display: inline-block;
-    margin: 2% 0 0 0;
+    margin: 2% 0 0 10%;
 
 }
 .home-left img {
-    width: 850px;
-    height: 850px;
+    width: 680px;
+    height: 650px;
 }
 /* 홈 화면 오른쪽 */
 .home-right {
     float: right;
-    margin: 2% 4% 0 0;
+    margin: 2% 13% 0 0;
 }
 .home-right-top {
 }
 .home-right-top img {
-    width: 850px;
-    height: 520px;
+    width: 680px;
+    height: 380px;
 }
 /* 홈 화면 연락처, 이메일, 주소 부분 */
 .home-right-down {
-    width: 850px;
+    width: 680px;
     padding-top: 60px;
+    
 }
 
 /* sns 계정 (카카오, 인스타) */
 .sns-account {
     float: left;
-    width: 850px;
+    width: 680px;
 }
 .sns-account dl {
     display: inline;
@@ -72,7 +58,7 @@
 /* 카카오 계정 */
 .kakao-account {
     float: left;
-    margin-left: 120px;
+    margin-left: 50px;
 }
 .kakao-account img {
     position: absolute;
@@ -95,8 +81,9 @@
 /* 연락처, 이메일 */
 .personal-contact {
     float: left;
-    width: 850px;
+    width: 680px;
     margin-top: 60px;
+    margin-left: 130px;
 }
 .personal-contact dl {
     display: inline;
@@ -112,7 +99,6 @@
 /* 연락처 */
 .phone-number {
     float: left;
-    margin-left: 230px;
 }
 #phone-email-partition {
     float: left;
@@ -127,7 +113,7 @@
 /* 집 주소 */
 .home-address {
     float: left;
-    width: 850px;
+    width: 680px;
     margin-top: 10px;
 }
 .home-address dl {
@@ -144,7 +130,7 @@
 
 footer {
     float: left;
-    width: 850px;
+    width: 680px;
     margin-top: 15px;
     font-size: 14px;
     color: gray;

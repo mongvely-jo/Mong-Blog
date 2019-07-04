@@ -6,9 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/body.css">
+
+    <!-- Latest compiled and minified CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body onload="Init_page()">
     <div class="body-container">
         <header>
             <div class="container">
@@ -34,18 +46,18 @@
                     <h1>Daily Mong</h1>
                     <hr id="right-hr-from-title">
                 </div>
+                <div class="main-index clearfix">
+                    <li class="menu-index-item"><a href="#about-me_page" onclick="Update_page(1)">ABOUT ME</a></li>
+                    <li class="menu-index-item"><a href="#daily_page" onclick="Update_page(2)">DAILY</a></li>
+                    <li class="menu-index-item"><a href="#trip_page" onclick="Update_page(3)">TRIP</a></li>
+                    <li class="menu-index-item"><a href="#photo_page" onclick="Update_page(4)">PHOTO</a></li>
+                    <li class="menu-index-item"><a href="#contact_page" onclick="Update_page(5)">CONTACT</a></li>
+                </div>
             </div>
         </header>
         <div class="main-body">
-            <div class="main-index clearfix">
-                <div class="menu-index-item">ABOUT ME</div>
-                <div class="menu-index-item">DAILY</div>
-                <div class="menu-index-item">TRIP</div>
-                <div class="menu-index-item">PHOTO</div>
-                <div class="menu-index-item">CONTACT</div>
-            </div>
             <section class="visual">
-                <section class="home clearfix">
+                <section id="Home_page" class="home clearfix">
                     <div class="home-left">
                         <img src="./images/home1.jpg" alt="home-left-image">
                     </div>
@@ -97,24 +109,36 @@
                         </div>
                     </div>
                 </section>
-                <section class="about-me">
-
+                <section class="about-me" id="about-me_page">
+                    <div>
+                        <h1>about-me 페이지!</h1>
+                    </div>
                 </section>
-                <section class="daily">
-
+                <section class="daily" id="daily_page">
+                    <div>
+                        <h1>daily 페이지</h1>
+                    </div>
                 </section>
-                <section class="trip">
-
+                <section class="trip" id="trip_page">
+                    <div>
+                        <h1>trip 페이지</h1>
+                    </div>
                 </section>
-                <section class="photh">
-
+                <section class="photo" id="photo_page">
+                    <div>
+                        <h1>photo 페이지</h1>
+                    </div>
                 </section>
-                <section class="contact">
-
+                <section class="contact" id="contact_page">
+                    <div>
+                        <h1>contact 페이지</h1>
+                    </div>
                 </section>
             </section>
         </div>
     </div>
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

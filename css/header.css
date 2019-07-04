@@ -4,7 +4,7 @@ body {
 }
 .body-container {
     width: 1920px;
-    height: 1080px;
+    height: 900px;
 }
 .container {
     width: 1920px;
@@ -24,7 +24,7 @@ body {
 }
 .profile {
     float: left;
-    margin-left: 7%;
+    margin-left: 25%;
 }
 .profile img{
     width: 40px;
@@ -58,7 +58,7 @@ body {
     float: right;
     list-style: none;
     margin-top: 10px;
-    margin-right: 14%;
+    margin-right: 25%;
     padding-right: 20px;
     
 }
@@ -84,7 +84,7 @@ body {
     display: inline-block;
     margin-top: 43px;
     margin-right: 1%;
-    width: 40%;
+    width: 31%;
     border: none;
     border-top: 2px solid black;
 }
@@ -95,7 +95,7 @@ body {
 #right-hr-from-title {
     display: inline-block;
     margin-top: 43px;
-    width: 40%;
+    width: 31%;
     border: none;
     border-top: 2px solid black;
 }
@@ -104,4 +104,25 @@ body {
     content: "";
     display: block;
     clear: both;
+}
+
+/* 목차 부분 */
+.main-index {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: 2%;
+    text-align: center;
+    float: left;
+}
+.menu-index-item {
+    display: inline;
+    margin: 0 5% 0 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-index-item a {
+    text-decoration: none;
+    color: black;
 }
