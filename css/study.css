@@ -1,0 +1,12 @@
+/* STUDY 페이지 */
+.study {
+    margin: 40px auto;
+    width: 900px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.study-card {
+    display: inline-block;
+    height: 1800px;
+}

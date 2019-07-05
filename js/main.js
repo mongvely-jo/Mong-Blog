@@ -18,6 +18,8 @@ function Init_page() {
         }
     }
 
+    
+
     console.log(page_name);
     console.log(page);
 }
@@ -33,4 +35,11 @@ function Update_page(num) {
     page[num] = 'true';
     console.log("Update_page 함수 page : ",page);
     document.getElementById(page_name[num]).style.display = "block";
+    /* STUDY 페이지 활성화시 PREV 버튼 숨김 */
+    if(page_num[num] === 1) {
+        let btn = document.getElementById("prev_btn");
+        btn.style.display = "none";
+    }
 }
+
+

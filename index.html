@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about_me.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/study.css">
 
     <!-- Latest compiled and minified CSS
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
@@ -17,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>  
 </head>
 
 <body onload="Init_page()">
@@ -46,12 +49,12 @@
                     <h1>Daily Mong</h1>
                     <hr id="right-hr-from-title">
                 </div>
-                <div class="main-index clearfix">
-                    <li class="menu-index-item"><a href="#about-me_page" onclick="Update_page(1)">ABOUT ME</a></li>
-                    <li class="menu-index-item"><a href="#daily_page" onclick="Update_page(2)">DAILY</a></li>
-                    <li class="menu-index-item"><a href="#trip_page" onclick="Update_page(3)">TRIP</a></li>
-                    <li class="menu-index-item"><a href="#photo_page" onclick="Update_page(4)">PHOTO</a></li>
-                    <li class="menu-index-item"><a href="#contact_page" onclick="Update_page(5)">CONTACT</a></li>
+                <div class="main-index clearfix" id="main-index-id">
+                    <li class="menu-index-item" id="menu-item1"><a href="#" onclick="Update_page(1)">ABOUT ME</a></li>
+                    <li class="menu-index-item" id="menu-item2"><a href="#study_page1" onclick="Update_page(2)">STUDY</a></li>
+                    <li class="menu-index-item" id="menu-item3"><a href="#trip_page" onclick="Update_page(3)">TRIP</a></li>
+                    <li class="menu-index-item" id="menu-item4"><a href="#photo_page" onclick="Update_page(4)">PHOTO</a></li>
+                    <li class="menu-index-item" id="menu-item5"><a href="#contact_page" onclick="Update_page(5)">CONTACT</a></li>
                 </div>
             </div>
         </header>
@@ -109,14 +112,31 @@
                         </div>
                     </div>
                 </section>
-                <section class="about-me" id="about-me_page">
-                    <div>
-                        <h1>about-me 페이지!</h1>
+                <section class="about-me clearfix" id="about-me_page">
+                    <div class="about-me-card">
+                        <div>
+                            <h1 class="page-title">ABOUT ME</h1>
+                        </div>
+                        <img class="about-me-card-img" src="./images/About_me_profile.jpg" alt="about-me-Card image">
+                        <div class="about-me-card-body">
+                            <h4 class="about-me-card-subtitle">Hi! I'm sang pil Jo, a man who loves daily life </h4>
+                            <p class="about-me-card-text">I'm an undergraduate student at Chonbuk National University. <br> My major is Computer Science. </p>
+                            <p class="about-me-card-text">This Homepage was created to record my daily life and to practice <br> what I learned to improve my Web-development skills</p>
+                            <p class="about-me-card-text">If you have any questions about me, contact me freely <br> I hope you will also be filled with blessings today.</p>
+                        </div>
                     </div>
                 </section>
-                <section class="daily" id="daily_page">
-                    <div>
-                        <h1>daily 페이지</h1>
+                <section class="study" id="study_page1">
+                    <div class="study-card">
+                        <div>
+                            <h1 class="page-title">STUDY</h1>
+                        </div>
+                        <!-- STUDY 카드 첫페이지 (iframe 활용) -->
+                        <iframe src="./study1.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+                        <div class="card-btn">
+                            <button id="prev_btn">PREV</button>
+                            <button id="next_btn">NEXT</button>
+                        </div>
                     </div>
                 </section>
                 <section class="trip" id="trip_page">
@@ -137,7 +157,6 @@
             </section>
         </div>
     </div>
-    </script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 

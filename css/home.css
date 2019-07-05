@@ -3,27 +3,32 @@
 }
 
 .visual {
+    width: 1430px;
     height: auto;
+    margin: auto;
+    background-color: rgb(235, 226, 226);
 }
 
 /* 홈 화면 */
 .home {
+    margin-top: 30px;
     text-align: center;
+    height: 735px;
 }
 /* 홈 화면 왼쪽 */
 .home-left {
+    float: left;
     display: inline-block;
-    margin: 2% 0 0 10%;
-
+    margin: 2% 0 0 4%;
 }
 .home-left img {
-    width: 680px;
+    width: 650px;
     height: 650px;
 }
 /* 홈 화면 오른쪽 */
 .home-right {
     float: right;
-    margin: 2% 13% 0 0;
+    margin: 2% 2% 0 0;
 }
 .home-right-top {
 }
@@ -140,7 +145,7 @@ footer {
 .about-me {
 
 }
-.daily {
+.study {
 
 }
 .trip {

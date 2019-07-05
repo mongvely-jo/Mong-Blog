@@ -4,11 +4,11 @@ body {
 }
 .body-container {
     width: 1920px;
-    height: 900px;
+    height: auto;
 }
 .container {
     width: 1920px;
-    height: 140px; 
+    height: 200px; 
 }
 .container-top {
     width: 100%;
@@ -111,7 +111,7 @@ body {
     position: relative;
     width: 100%;
     height: 30px;
-    margin-top: 2%;
+    margin-top: 1%;
     text-align: center;
     float: left;
 }
@@ -125,4 +125,11 @@ body {
 .menu-index-item a {
     text-decoration: none;
     color: black;
+}
+
+.page-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: rgb(71, 69, 69);
+    letter-spacing: 5px;
 }
