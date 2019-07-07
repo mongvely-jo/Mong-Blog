@@ -8,5 +8,9 @@
 
 .study-card {
     display: inline-block;
+}
+
+.study-page {
+    margin-right: -5px;
     height: 1800px;
 }

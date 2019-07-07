@@ -21,6 +21,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="./js/study.js"></script>
 </head>
 
 <body onload="Init_page()">
@@ -59,8 +60,8 @@
             </div>
         </header>
         <div class="main-body">
-            <section class="visual">
-                <section id="Home_page" class="home clearfix">
+            <div class="visual" id="visual">
+                <div id="Home_page" class="home clearfix">
                     <div class="home-left">
                         <img src="./images/home1.jpg" alt="home-left-image">
                     </div>
@@ -111,8 +112,8 @@
                             </footer>
                         </div>
                     </div>
-                </section>
-                <section class="about-me clearfix" id="about-me_page">
+                </div>
+                <div class="about-me clearfix" id="about-me_menu">
                     <div class="about-me-card">
                         <div>
                             <h1 class="page-title">ABOUT ME</h1>
@@ -120,41 +121,49 @@
                         <img class="about-me-card-img" src="./images/About_me_profile.jpg" alt="about-me-Card image">
                         <div class="about-me-card-body">
                             <h4 class="about-me-card-subtitle">Hi! I'm sang pil Jo, a man who loves daily life </h4>
-                            <p class="about-me-card-text">I'm an undergraduate student at Chonbuk National University. <br> My major is Computer Science. </p>
-                            <p class="about-me-card-text">This Homepage was created to record my daily life and to practice <br> what I learned to improve my Web-development skills</p>
+                            <p class="about-me-card-text">I'm an undergraduate student at Chonbuk National University. <br> My major is Computer Science.</p>
+                            <p class="about-me-card-text">This Homepage was created to record my daily life and to practice <br>what I learned to improve my Web-development skills</p>
                             <p class="about-me-card-text">If you have any questions about me, contact me freely <br> I hope you will also be filled with blessings today.</p>
                         </div>
                     </div>
-                </section>
-                <section class="study" id="study_page1">
+                    <footer>
+                            <p>Copyright(c)2019 조상필 All rights reserved.</p>
+                    </footer>
+                </div>
+                <div class="study" id="study_menu">
                     <div class="study-card">
                         <div>
                             <h1 class="page-title">STUDY</h1>
                         </div>
-                        <!-- STUDY 카드 첫페이지 (iframe 활용) -->
-                        <iframe src="./study1.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+                        <div class="study-page">
+                            <!-- STUDY 카드 첫페이지 (iframe 활용) -->
+                            <iframe id="study_page1" src="./study1.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+                            <iframe id="study_page2" src="./study2.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+                            <iframe id="study_page3" src="./study3.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+                            <iframe id="study_page4" src="./study4.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+                        </div>
                         <div class="card-btn">
-                            <button id="prev_btn">PREV</button>
-                            <button id="next_btn">NEXT</button>
+                            <button id="prev_btn" onclick="Prev_study_page()">PREV</button>
+                            <button id="next_btn" onclick="Next_study_page()">NEXT</button>
                         </div>
                     </div>
-                </section>
-                <section class="trip" id="trip_page">
+                </div>
+                <div class="trip" id="trip_menu">
                     <div>
                         <h1>trip 페이지</h1>
                     </div>
-                </section>
-                <section class="photo" id="photo_page">
+                </div>
+                <div class="photo" id="photo_menu">
                     <div>
                         <h1>photo 페이지</h1>
                     </div>
-                </section>
-                <section class="contact" id="contact_page">
+                </div>
+                <div class="contact" id="contact_menu">
                     <div>
                         <h1>contact 페이지</h1>
                     </div>
-                </section>
-            </section>
+                </div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
