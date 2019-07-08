@@ -16,7 +16,7 @@ function Init_page() {
         menu_name_arr.push(menu.children[i].id);
         menu_status_arr.push('false');
     }
-    menu_status_arr[0] = 'true';
+    menu_status_arr[3] = 'true';    //  home-page로 초기화
 
     for (let i = 0; i < menu.childElementCount; i++) {
         if (menu_status_arr[i] === 'false') {
@@ -50,8 +50,13 @@ function Update_page(num) {
         console.log(study_iframe_name);
         let visual_height = document.getElementById("visual");
         visual_height.style.height = "1900px";
+    } else if (menu_name_arr[num] === "trip_menu") {
+        console.log("Trip 메뉴 시작");
+        let visual_height = document.getElementById("visual");
+        visual_height.style.height = "1900px";
     } else {
         let visual_height = document.getElementById("visual");
         visual_height.style.height = "auto";
     }
+
 }
