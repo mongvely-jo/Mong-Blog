@@ -9,11 +9,6 @@
     border-bottom: none;
 }
 
-.article-card :hover {
-    /* background-color: rgb(245, 175, 46) */
-}
-
-
 /* 각 article-card 영역 */
 .article-summary {
     width: 850px;
@@ -48,6 +43,10 @@
     float: left;
     margin-right: 10px;
 }
+
+.article-thumbnail:hover {
+}
+
 .article-thumbnail img {
     width: 300px;
     height: 150px;
@@ -57,7 +56,6 @@
 .article-contents {
     display: inline-block;
     padding: 20px 0 0 50px;
-    float: left;
     text-align: left;
 }
 .article-contents h2, p {
