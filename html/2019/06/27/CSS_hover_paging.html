@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/study_article.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a class="profile" href="#"><img src="../../../../images/profile.jpg" alt="프로필 사진"></a>
+            <h4 class="blog-name">Mong Blog</h4>
+        </div>
+    </header>
+    <div class="article">
+        <div class="article-center">
+            <div class="article-header">
+                <h1 class="header-title">CSS 링크 가상 클래스 (link, visited, hover, active)</h1>
+                <p class="article-date">2019 / June</p>
+                <div class="article-main-img">
+                    <img src="../../../../images/CssLogo.jpg" alt="CSS LOGO">
+                </div>
+            </div>
+            <div class="article-body">
+                <section class="article-content">
+                    <h2>
+                        <span class="strapline">개요</span>
+                    </h2>
+                    <p>
+                        "
+                        <code>:link</code>
+                        ,
+                        <code>:visited</code>
+                        ,
+                        <code>:hover</code>
+                        ,
+                        <code>:active</code>
+                        링크는 마우스로 해당 객체위에 마우스를 올려놓았을때 변화를 주어 엑티브한 페이지를 구성할때 사용한다.
+                        <br>
+                        (링크뿐만 아니라 모든 요소에서 사용 가능)
+                    </p>
+                    <h2>
+                        <span class="strapline">관련태그</span>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>셀렉터</th>
+                                <th>의미</th>
+                                <th>예시</th>
+                                <th>특징</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>link</td>
+                                <td>아직 방문하지 않은 링크</td>
+                                <td>a:link {color:green;}</td>
+                                <td>a 태그에만 적용 가능</td>
+                            </tr>
+                            <tr>
+                                <td>visited</td>
+                                <td>이미 방문한 링크</td>
+                                <td>a:visited {color:green}</td>
+                                <td>a 태그에만 적용 가능</td>
+                            </tr>
+                            <tr>
+                                <td>hover</td>
+                                <td>마우스를 올렸을때</td>
+                                <td>a:hover {color:red;}</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>active</td>
+                                <td>마우스로 링크를 클릭하는 중일때</td>
+                                <td>a:active {color:yellow;}</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="css-example" data-lang="CSS" style="overflow: scroll">
+                        <span>
+                            <span class="css-class">.mylink</span>
+                            <span class="css-selector">:hover</span>
+                            <span class="css-tag"> { </span>
+                            <span class="css-attr">background-color:            </span>
+                            <span class="css-value">yellow;</span>
+                            <span class="css-tag"> }</span>
+                            <br>
+                            <span class="css-class">.mylink</span>
+                            <span class="css-selector">:active</span>
+                            <span class="css-tag"> { </span>
+                            <span class="css-attr">background-color: </span>
+                            <span class="css-value">red;</span>
+                            <span class="css-tag"> }</span>   
+                            <br>
+                            <span class="css-class">.mylink</span>
+                            <span class="css-selector">:link</span>
+                            <span class="css-tag"> { </span>
+                            <span class="css-attr">color: </span>
+                            <span class="css-value">green;</span>
+                            <span class="css-tag"> }</span>
+                            <br>
+                            <span class="css-class">.mylink</span>
+                            <span class="css-selector">:visited</span>
+                            <span class="css-tag"> { </span>
+                            <span class="css-attr">color: </span>
+                            <span class="css-value">hotpink;</span>
+                            <span class="css-tag"> }</span>
+                        </span>
+                    </div>
+                    <h2>
+                        <span class="strapline">실행화면</span>
+                    </h2>
+                    <div class="css-selector-example-img">
+                        <img src="./hover.PNG" alt="hover-example-img">
+                        <img src="./active.PNG" alt="active-example-img">
+                        <img src="./link.PNG" alt="link-example-img">
+                        <img src="./visited.PNG" alt="visited-example-img">
+                    </div>
+                    <footer>
+                        <p>Copyright(c)2019 조상필 All rights reserved.</p>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

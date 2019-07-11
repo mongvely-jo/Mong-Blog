@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/study.css">
     <link rel="stylesheet" href="./css/trip.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/study_article.css">
+
     <script type="text/javascript" src="./js/study.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </head>
@@ -21,16 +23,16 @@
             <div class="container">
                 <div class="container-top clearfix">
                     <div class="container-left clearfix">
-                        <a class="profile" href="#"><img src="./images/profile.jpg" alt="프로필 사진"></a>
+                    <img class="profile" src="./images/profile.jpg" alt="프로필 사진">
                         <ul class="menu-first clearfix">
-                            <li class="menu-first-item">prologue</li>
+                            <li class="menu-first-item"><a href="#About_me" onclick="Update_page(1)">Info</a></li>
                             <li class="menu-first-item">|</li>
-                            <li class="menu-first-item"><a href="#Home_page" onclick="Udate_page(0)">home</a></li>
+                            <li class="menu-first-item"><a href="#Home-page" onclick="Update_page(0)">home</a></li>
                         </ul>
                     </div>
                     <div class="container-right clearfix">
                         <ul class="menu-second">
-                            <li class="menu-second-item">이웃 블로그</li>
+                            <li class="menu-second-item">관심 블로그</li>
                             <li class="menu-second-item">|</li>
                             <li class="menu-second-item">이메일</li>
                         </ul>
@@ -38,14 +40,14 @@
                 </div>
                 <div class="container-center">
                     <hr id="left-hr-from-title">
-                    <h1><a href="#Home-page" onclick="Update_page(0)">Daily Mong</a></h1>
+                    <h1><a href="#Home-page" onclick="Update_page(0)">Mong Blog</a></h1>
                     <hr id="right-hr-from-title">
                 </div>
                 <div class="main-index clearfix" id="main-index-id">
-                    <li class="menu-index-item" id="menu-item1"><a href="#" onclick="Update_page(1)">ABOUT ME</a></li>
-                    <li class="menu-index-item" id="menu-item2"><a href="#" onclick="Update_page(2)">STUDY</a></li>
-                    <li class="menu-index-item" id="menu-item3"><a href="#" onclick="Update_page(3)">TRIP</a></li>
-                    <li class="menu-index-item" id="menu-item5"><a href="#" onclick="Update_page(4)">CONTACT</a></li>
+                    <li class="menu-index-item" id="menu-item1"><a href="#About-me" onclick="Update_page(1)">ABOUT ME</a></li>
+                    <li class="menu-index-item" id="menu-item2"><a href="#Study" onclick="Update_page(2)">STUDY</a></li>
+                    <li class="menu-index-item" id="menu-item3"><a href="#Trip" onclick="Update_page(3)">TRIP</a></li>
+                    <li class="menu-index-item" id="menu-item5"><a href="#Contact" onclick="Update_page(4)">CONTACT</a></li>
                 </div>
             </div>
         </header>
@@ -143,6 +145,9 @@
                             <button id="prev_btn" onclick="Prev_study_page()">PREV</button>
                             <button id="next_btn" onclick="Next_study_page()">NEXT</button>
                         </div>
+                        <footer>
+                            <p>Copyright(c)2019 조상필 All rights reserved.</p>
+                        </footer>
                     </div>
                 </div>
                 <div class="trip" id="trip_menu">
@@ -151,9 +156,12 @@
                             <h1 class="page-title">TRIP</h1>
                         </div>
                         <div class="trip-page">
-                            <iframe id="trip_page" src="./html/trip/trip_main.html" width="100%" height="3000px"
+                            <iframe id="trip_page" src="./html/trip/trip_main.html" width="100%" height="1200px"
                                 scrolling="no" frameborder="0"></iframe>
                         </div>
+                        <footer>
+                            <p>Copyright(c)2019 조상필 All rights reserved.</p>
+                        </footer>
                     </div>
                 </div>
                 <div class="contact" id="contact_menu">
@@ -178,6 +186,9 @@
                                 <input type="submit" value="Send">
                             </div>
                         </form>
+                        <footer>
+                            <p>Copyright(c)2019 조상필 All rights reserved.</p>
+                        </footer>
                     </div>
                 </div>
             </div>

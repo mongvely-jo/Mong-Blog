@@ -1,13 +1,13 @@
 .trip {
     margin: 40px auto;
-    width: 900px;
+    width: 800px;
     text-align: center;
     padding-top: 20px;
 }
 /* card 날짜 표시 */
 .trip-card-date {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 65px;
     position: absolute;
     text-align: center;
     background: rgb(30, 33, 95);
@@ -25,6 +25,9 @@
 .trip-card-month {
     font-size: 11px;
 }
+.trip-card-year {
+    font-size: 10px;
+}
 .trip-card {    
 
 }
@@ -33,17 +36,22 @@
 
 /* 세로 사진 카드 */
 .vertical-card {
+    position: relative;
     background: white;
-    width: 900px;
+    width: 800px;
     height: 450px;
     display: inline-block;
     margin-bottom: 70px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.5);
 }
+.vertical-card-main {
+    display: inline-block;
+    position: relative;
+}
 .vertical-thumbnail {
     overflow: hidden;
     float: left;
-    width: 420px;
+    width: 400px;
     height: 450px;
 }
 .vertical-thumbnail img {
@@ -91,16 +99,37 @@
     user-select: none;
 }
 .vertical-card-contents {
-    margin-left: 50px;
+    position: relative;
+    background: rgb(225, 235, 252);
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    float: right;
+    line-height: 140%;
+}
+.vertical-card-contents h2 {
+    float: center;
     width: auto;
-    float: left;
-    display: block;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.vertical-card-contents p {
+    float: center;
+    width: auto;
+    padding-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* 가로 사진 카드 */
 .horizontal-card {
     background: white;
-    width: 900px;
+    width: 800px;
     height:500px;
     display: inline-block;
     margin-bottom: 70px;
@@ -142,7 +171,7 @@
     position: absolute;
     background: red;
     top: 160px;
-    left: 425px;
+    left: 370px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -158,8 +187,22 @@
     user-select: none;
 }
 .horizontal-card-contents {
-    margin-left: 50px;
-    width: auto;
+    background: rgb(225, 235, 252);
+    width: 800px;
+    height: 150px;
     float: left;
     display: block;
+    line-height: 140%;
+}
+.horizontal-card-contents h2 {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+.horizontal-card-contents p {
+    width: auto;
+    padding-left: 50px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
