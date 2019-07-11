@@ -1,22 +1,23 @@
 const menu_status_arr = []; // 실행중인 메뉴목록 true or false
 const menu_name_arr = []; //  메뉴목록 이름
-const menu = document.getElementsByClassName("visual").item(0); // 각 메뉴에 접근하기 위함
+let menu; // 각 메뉴에 접근하기 위함
 
-const study_iframe = document.getElementsByClassName("study-page").item(0); //  Study 페이지의 각 iframe에 접근하기 위함
+let study_iframe; //  Study 페이지의 각 iframe에 접근하기 위한 변수
 const study_iframe_name = []; //  iframe 목록 이름
-const num_of_iframe = study_iframe.childElementCount; //  iframe의 개수
+let num_of_iframe; //  iframe의 개수 저장을 위한 변수
 let now_page;
 let study_page_init_status = 'false';
 
 /* 페이지 로딩시 초기화 */
 function Init_page() {
     console.log("Init_page() 실행");
+    menu = document.getElementsByClassName("visual").item(0);   // 각 메뉴에 접근하기 위함
     console.log("menu.childElementCount : ", menu.childElementCount);
     for (let i = 0; i < menu.childElementCount; i++) {
         menu_name_arr.push(menu.children[i].id);
         menu_status_arr.push('false');
     }
-    menu_status_arr[0] = 'true';
+    menu_status_arr[0] = 'true';    //  home-page로 초기화
 
     for (let i = 0; i < menu.childElementCount; i++) {
         if (menu_status_arr[i] === 'false') {
@@ -44,14 +45,23 @@ function Update_page(num) {
     /* Study 메뉴 */
     if (menu_name_arr[num] === 'study_menu') {
         console.log("Study 메뉴 시작");
+        study_iframe = document.getElementsByClassName("study-page").item(0); //Study 페이지의 각 iframe에 접근함
+        num_of_iframe = study_iframe.childElementCount; // iframe의 개수
         now_page = 0;
         Init_study_page();
 
         console.log(study_iframe_name);
         let visual_height = document.getElementById("visual");
         visual_height.style.height = "1900px";
+    } else if (menu_name_arr[num] === "trip_menu") {
+        console.log("Trip 메뉴 시작");
+        let visual_height = document.getElementById("visual");
+        visual_height.style.height = "auto";
     } else {
         let visual_height = document.getElementById("visual");
         visual_height.style.height = "auto";
     }
+
 }
+
+ 

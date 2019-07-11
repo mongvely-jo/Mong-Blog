@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../css/study_article.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a class="profile" href="#"><img src="../../../../images/profile.jpg" alt="프로필 사진"></a>
+            <h4 class="blog-name">Mong Blog</h4>
+        </div>
+    </header>
+    <div class="article">
+        <div class="article-center">
+            <div class="article-header">
+                <h1 class="header-title">JS 함수 선언식과 표현식</h1>
+                <p class="article-date">2019 / June</p>
+                <div class="article-main-img">
+                    <img src="../../../../images/JavaScriptLogo.jpeg" alt="JavaScript LOGO">
+                </div>
+            </div>
+            <div class="article-body">
+                <section class="article-content">
+                    <h2>
+                        <span class="strapline">개요</span>
+                    </h2>
+                    <p>
+                        <ul>
+                            <li>함수 선언식 : 일반적으로 함수 선언하고 함수이름을 호출하는 방법</li>
+                            <li>함수 표현식 : 함수를 변수에 저장하고 변수를 통해 함수를 사용하는 방법</li>
+                        </ul>
+                    </p>
+                    <h2>
+                        <span class="strapline">함수 선언식 (Function Declarations)</span>
+                    </h2>
+                    <p>일반적인 프로그래밍 언어에서의 함수 선언과 비슷한 형식이다.</p>
+                    <div class="js-example" data-lang="JavaScript" style="overflow: scroll">
+                        <span>
+                            <span class="js-attr">function</span>
+                            <span class="js-name">함수명</span>
+                            <span class="js-tag">() {</span>
+                            <br>
+                            <span class="js-value tab">구현로직</span>
+                            <br>
+                            <span class="js-tag"> } </span>
+                        </span>
+                    </div>
+                    <div class="js-example" data-lang="JavaScript" style="overflow: scroll">
+                        <span>
+                            <span class="js-attr">function</span>
+                            <span class="js-name">funcDeclarations</span>
+                            <span class="js-tag">() {</span>
+                            <br>
+                            <span class="js-attr tab">return</span>
+                            <span class="js-value">10</span>
+                            <span class="js-tag">+</span>
+                            <span class="js-value">20</span>
+                            <span class="js-tag">;</span>
+                            <br>
+                            <span class="js-tag"> } </span>
+                            <br>
+                            <span class="js-name">funcDeclarations</span>
+                            <span class="js-tag">();</span>
+                        </span>
+                    </div>
+                    <h2>
+                        <span class="strapline">함수 표현식 - Function Expressions</span>
+                    </h2>
+                    <p>유연한 자바스크립트 언어의 특징을 활용한 선언 방식</p>
+                    <div class="js-example" data-lang="JavaScript" style="overflow: scroll">
+                        <span>
+                            <span class="js-attr">var</span>
+                            <span class="js-name">함수명</span>
+                            <span class="js-tag">= function</span>
+                            <span class="js-tag">() {</span>
+                            <br>
+                            <span class="js-value tab">구현로직</span>
+                            <br>
+                            <span class="js-tag"> } </span>
+                        </span>
+                    </div>
+                    <div class="js-example" data-lang="JavaScript" style="overflow: scroll">
+                        <span>
+                            <span class="js-attr">var</span>
+                            <span class="js-name">funcExpression</span>
+                            <span class="js-attr">= function</span>
+                            <span class="js-tag">() {</span>
+                            <br>
+                            <span class="js-attr tab">return</span>
+                            <span class="js-value">10</span>
+                            <span class="js-tag">+</span>
+                            <span class="js-value">20</span>
+                            <span class="js-tag">;</span>
+                            <br>
+                            <span class="js-tag"> } </span>
+                            <br>
+                            <span class="js-name">funcExpression</span>
+                            <span class="js-tag">();</span>
+                        </span>
+                    </div>
+                    <h2>
+                        <span class="strapline">함수 선언식과 표현식의 차이점</span>
+                    </h2>
+                    <p>함수 선언식은 호이스팅에 영향을 받지만, 함수 표현식은 호이스팅에 영향을 받지 않는다.</p>
+                    <br>
+                    <p>함수 선언식은 코드를 구현한 위치와 관계없이 자바스크립트의 특징인 호이스팅에 따라 브라우저가 자바스크립트를 해석할 때 맨 위로 끌어 올려진다.</p>
+                    <br>
+                    <p>예를 들어서 아래의 코드를 실행하면</p>
+                    <div class="js-example" data-lang="JavaScript" style="overflow: scroll">
+                        <span>
+                            <span class="js-name">sumfunc</span>
+                            <span class="js-tag">();</span>
+                            <br>
+                            <span class="js-name">multifunc</span>
+                            <span class="js-tag">();</span>
+                            <br><br>
+                            <span class="js-attr">function</span>
+                            <span class="js-name">sumfunc</span>
+                            <span class="js-tag">() {</span>
+                            <br>
+                            <span class="js-attr tab">return</span>
+                            <span class="js-value">10</span>
+                            <span class="js-tag">+</span>
+                            <span class="js-value">20</span>
+                            <span class="js-tag">;</span>
+                            <br>
+                            <span class="js-tag"> } </span>
+                            <br><br>
+                            <span class="js-attr">var</span>
+                            <span class="js-name">sumNumbers</span>
+                            <span class="js-attr"> = function</span>
+                            <span class="js-tag">() {</span>
+                            <br>
+                            <span class="js-attr tab">return</span>
+                            <span class="js-value">3</span>
+                            <span class="js-tag">*</span>
+                            <span class="js-value">4</span>
+                            <span class="js-tag">;</span>
+                            <br>
+                            <span class="js-tag">};</span>
+                        </span>
+                    </div>
+                    <p>호이스팅에 의해서 자바스크립트 해석기는 코드를 아래와 같이 인식한다.</p>
+                    <div class="js-example" data-lang="JavaScript" style="overflow: scroll">
+                        <span>
+                            <span class="js-attr">function</span>
+                            <span class="js-name">sumfunc</span>
+                            <span class="js-tag">() {</span>
+                            <br>
+                            <span class="js-attr tab">return</span>
+                            <span class="js-value">10</span>
+                            <span class="js-tag">+</span>
+                            <span class="js-value">20</span>
+                            <span class="js-tag">;</span>
+                            <br>
+                            <span class="js-tag"> } </span>
+                            <br><br>
+                            <span class="js-attr">var</span>
+                            <span class="js-name">sumNumbers</span>
+                            <span class="js-tag">;</span>
+                            <br><br>
+                            <span class="js-name">sumfunc</span>
+                            <span class="js-tag">();</span>
+                            <br>
+                            <span class="js-name">multifunc</span>
+                            <span class="js-tag">();</span>
+                            <br><br>
+                            <span class="js-name">sumNumbers</span>
+                            <span class="js-attr"> = function</span>
+                            <span class="js-tag">() {</span>
+                            <br>
+                            <span class="js-attr tab">return</span>
+                            <span class="js-value">3</span>
+                            <span class="js-tag">*</span>
+                            <span class="js-value">4</span>
+                            <span class="js-tag">;</span>
+                            <br>
+                            <span class="js-tag">};</span>
+                        </span>
+                    </div>
+                    <p>위 코드는 => "
+                        <code>Uncaught TypeError: sumNumbers is not a function</code>
+                        " 에 해당된다.</p>
+                    <p>함수 표현식 sumNumbers에서 var도 호이스팅이 적용되어 위치가 상단으로 끌어올려졌다.</p>
+                    <p>하지만 실제 sum Numbers에 할당될 function 로직ㄴ은 호출된 이후에 선언되므로, sumNumbers는 함수로 인식되지 않고 변수로 인식한다.</p>
+                    <div class="js-example">
+                        <span>
+                            <span class="js-name">호이스팅으로 인한 스코프 꼬임 현상을 방지하기 위해서 함수와 변수를 가급적 코드 상단부에 선언!!</span>
+                        </span>
+                    </div>
+                    <footer>
+                        <p>Copyright(c)2019 조상필 All rights reserved.</p>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+.trip {
+    margin: 40px auto;
+    width: 800px;
+    text-align: center;
+    padding-top: 20px;
+}
+/* card 날짜 표시 */
+.trip-card-date {
+    width: 55px;
+    height: 65px;
+    position: absolute;
+    text-align: center;
+    background: rgb(30, 33, 95);
+    margin-top: 10px;
+    z-index: 1;
+}
+.trip-card-date p {
+    font-weight: bolder;
+    color: white;
+    margin: 2px auto;
+}
+.trip-card-day {
+    font-size: 18px;
+}
+.trip-card-month {
+    font-size: 11px;
+}
+.trip-card-year {
+    font-size: 10px;
+}
+.trip-card {    
+
+}
+.trip-page {
+}
+
+/* 세로 사진 카드 */
+.vertical-card {
+    position: relative;
+    background: white;
+    width: 800px;
+    height: 450px;
+    display: inline-block;
+    margin-bottom: 70px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+.vertical-card-main {
+    display: inline-block;
+    position: relative;
+}
+.vertical-thumbnail {
+    overflow: hidden;
+    float: left;
+    width: 400px;
+    height: 450px;
+}
+.vertical-thumbnail img {
+    width: inherit;
+    height: inherit;
+    transition:.7s;
+}
+.vertical-thumbnail:hover img {
+    transform:scale(1.2);
+}
+.vertical-thumbnail:hover .vertical-darkness {
+    opacity: 0.4;
+}
+.vertical-thumbnail:hover .vertical-btn-plus {
+    opacity: 1;
+    transform: scale(1);
+}
+.vertical-darkness {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 420px;
+    height: 450px;
+    background: #000000;
+    opacity: 0;
+    transition: all .6s linear;
+}
+.vertical-btn-plus {
+    position: absolute;
+    background: red;
+    top: 200px;
+    left: 185px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: all .3s linear;
+    z-index: 1;
+}
+.vertical-btn-plus span {
+    font-size: 30px;
+    color: white;
+    user-select: none;
+}
+.vertical-card-contents {
+    position: relative;
+    background: rgb(225, 235, 252);
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    float: right;
+    line-height: 140%;
+}
+.vertical-card-contents h2 {
+    float: center;
+    width: auto;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.vertical-card-contents p {
+    float: center;
+    width: auto;
+    padding-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* 가로 사진 카드 */
+.horizontal-card {
+    background: white;
+    width: 800px;
+    height:500px;
+    display: inline-block;
+    margin-bottom: 70px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+.horizontal-thumbnail {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: inherit;
+    height: 350px;
+}
+.horizontal-thumbnail img {
+    width: inherit;
+    height: inherit;
+    transition: .7s;
+}
+.horizontal-thumbnail:hover img {
+    transform: scale(1.2);
+}
+.horizontal-thumbnail:hover .horizontal-darkness {
+    opacity: 0.4;
+}
+.horizontal-thumbnail:hover .horizontal-btn-plus {
+    opacity: 1;
+    transform: scale(1);
+}
+.horizontal-darkness {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: inherit;
+    height: inherit;
+    background: #000000;
+    opacity: 0;
+    transition: all .6s linear;
+}
+.horizontal-btn-plus {
+    position: absolute;
+    background: red;
+    top: 160px;
+    left: 370px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: all .3s linear;
+    z-index: 1;
+}
+.horizontal-btn-plus span {
+    font-size: 30px;
+    color: white;
+    user-select: none;
+}
+.horizontal-card-contents {
+    background: rgb(225, 235, 252);
+    width: 800px;
+    height: 150px;
+    float: left;
+    display: block;
+    line-height: 140%;
+}
+.horizontal-card-contents h2 {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+.horizontal-card-contents p {
+    width: auto;
+    padding-left: 50px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

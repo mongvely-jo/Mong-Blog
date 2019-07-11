@@ -1,0 +1,167 @@
+/* 헤더 부분 */
+.header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid rgb(235, 234, 234);
+    padding-left: 300px;
+}
+.header-container {
+    display: block;
+}
+.profile {
+    display: inline;
+}
+.profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+}
+.blog-name {
+    margin: 10px 0 0 10px;
+    float: left;
+}
+
+/* Body 부분 */
+.article {
+    background: linear-gradient(135deg, rgb(230, 230, 230), rgb(230, 230, 230) 25%, transparent 25%, transparent 50%, rgb(230, 230, 230) 50%, rgb(230, 230, 230) 75%, transparent 75%, transparent);
+    background-size: 7px 7px;
+}
+.article-center {
+    background: white;
+    border: 2px solid rgb(235, 234, 234);
+    width: 980px;
+    height: auto;
+    margin: -2px auto 0 auto;
+    margin-top: -2px;
+}
+
+/* Body의 header  */
+.article-header {
+    position: relative;
+    border-bottom: 2px dashed rgb(235, 234, 234);
+    padding-bottom: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+.header-title {
+    font-size: 50px;
+}
+.article-date {
+    font-size: 15px;
+    margin-top: 20px;
+}
+.article-main-img {
+
+}
+.article-main-img img {
+    width: 350px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+/* Body의 content 부분 */
+.article-body {
+    padding: 0px 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.article-content {
+}
+.article-content h2{
+    padding-top: 120px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(235, 234, 234);
+}
+.strapline {
+    width: 100%;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+.article-content code {
+    color: #e96900;
+    background-color: rgb(231, 231, 231);
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+tbody {
+    display: table-row-group;
+}
+tr:nth-child(even){
+    background: rgb(231, 231, 231);
+}
+th {
+    font-size: 16x;
+    padding: 10px 20px;
+    vertical-align: top;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+td {
+    font-size: 13.5px;
+    padding: 10px 20px;
+    border: 1px solid rgb(240, 240, 240);
+}
+.html-example, .css-example, .js-example{
+    background: rgb(21, 21, 61);
+    margin-top: 40px;
+    padding: 20px 0 20px 20px;
+    height: auto;
+    white-space: nowrap;
+}
+.html-value,.html-address{
+    margin-right: 10px;
+}
+.html-tag {
+    margin: 0 -3px 0 -3px;
+    color:  rgb(185, 185, 185);
+}
+.css-tag, .js-tag  {
+    margin: 0 3px 0 3px;
+    color: rgb(185, 185, 185);
+}
+.html-name, .css-selector, .js-name {
+    color: #e96900;
+}
+.html-attr, .css-attr {
+    color: rgb(185, 185, 185);
+}
+.html-value, .css-value, .js-value {
+    color: rgb(67, 136, 67);
+}
+.html-address a{
+    text-decoration: none;
+    color: rgb(106, 106, 236);
+}
+.css-class, .js-attr {
+    color:rgb(79, 155, 255)
+}
+.html-iframe-example-img {
+    width: inherit;
+    height: inherit;
+}
+.html-iframe-example-img img {
+    width: 900px;
+    height: 600px;
+}
+.css-selector-example-img {
+    text-align: center;
+}
+.css-selector-example-img img {
+    width: 400px;
+    height: 200px;
+}
+.tab {
+    padding-left: 30px;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
