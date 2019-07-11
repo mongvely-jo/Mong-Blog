@@ -6,6 +6,7 @@ let study_iframe; //  Study 페이지의 각 iframe에 접근하기 위한 변�
 const study_iframe_name = []; //  iframe 목록 이름
 let num_of_iframe; //  iframe의 개수 저장을 위한 변수
 let now_page;
+let page_status;    // 페이지의 상태를 나타내는 변수
 let study_page_init_status = 'false';
 
 /* 페이지 로딩시 초기화 */
@@ -48,6 +49,7 @@ function Update_page(num) {
         study_iframe = document.getElementsByClassName("study-page").item(0); //Study 페이지의 각 iframe에 접근함
         num_of_iframe = study_iframe.childElementCount; // iframe의 개수
         now_page = 0;
+        page_status = "true";
         Init_study_page();
 
         console.log(study_iframe_name);

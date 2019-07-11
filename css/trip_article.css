@@ -1,0 +1,101 @@
+/* 헤더 부분 */
+.header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid rgb(235, 234, 234);
+    padding-left: 300px;
+}
+.header-container {
+    display: block;
+}
+.profile {
+    display: inline;
+}
+.profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+}
+.blog-name {
+    margin: 10px 0 0 10px;
+    float: left;
+}
+
+/* Body 부분 */
+.article {
+    background: linear-gradient(135deg, rgb(230, 230, 230), rgb(230, 230, 230) 25%, transparent 25%, transparent 50%, rgb(230, 230, 230) 50%, rgb(230, 230, 230) 75%, transparent 75%, transparent);
+    background-size: 7px 7px;
+}
+.article-center {
+    background: white;
+    border: 2px solid rgb(235, 234, 234);
+    width: 980px;
+    height: auto;
+    margin: -2px auto 0 auto;
+    margin-top: -2px;
+}
+
+/* Body의 header  */
+.article-header {
+    position: relative;
+    border-bottom: 2px dashed rgb(235, 234, 234);
+    padding-bottom: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+.article-header h1 {
+    color: rgb(68, 68, 68);
+}
+.header-title {
+    font-size: 50px;
+}
+.article-date {
+    font-size: 15px;
+    margin-top: 20px;
+}
+.article-main-img {
+
+}
+.article-main-img img {
+    width: 350px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+/* Body의 content 부분 */
+.article-body {
+    padding: 0px 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.article-content {
+    text-align: center;
+}
+.article-content h2{
+    text-align: left;
+    padding-top: 120px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(235, 234, 234);
+}
+.article-content {
+    
+}
+.article-content img {
+    margin: 20px 0 50px 0;
+}
+.article-content p {
+    line-height: 180%;
+}
+.vertical-img img{
+    width: 500px;
+    height: 600px;
+}
+.horizontal-img img{
+    width: 700px;
+    height: 450px;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}

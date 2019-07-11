@@ -35,20 +35,38 @@ function Prev_study_page() {
 /* Study 페이지 next, prev 버튼 상태 변경 */
 function Button_study_page() {
    console.log("Button_study_page() 실행");
+   console.log("now_page : ", now_page);
    let prev_btn = document.getElementById("prev_btn");
    let next_btn = document.getElementById("next_btn");
    switch(now_page) {
         case 0:
-           prev_btn.style.display = "none";
+                console.log("page_status : ", page_status);
+            if(page_status === "true"){
+               prev_btn.style.display = "none";
+            }else {
+                prev_btn.style.display = "none";
+                next_btn.style.display = "block";
+                page_status = "true";
+            }
            break;
         case 1:
-            prev_btn.style.display = "block";
+                console.log("page_status : ", page_status);
+            if(page_status === "true"){
+                prev_btn.style.display = "block";
+            } else {
+                next_btn.style.display = "block";
+            }
             break;
         case num_of_iframe-2:
-            next_btn.style.display = "block";
+                console.log("page_status : ", page_status);
+            if(page_status === "false"){
+                next_btn.style.display = "block";
+            }
             break;
         case num_of_iframe-1:
+                console.log("page_status : ", page_status);
             next_btn.style.display = "none";
+            page_status = "false";
             break;
    }
 }
